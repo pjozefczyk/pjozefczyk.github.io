@@ -1,0 +1,121 @@
+* {
+  font-family: 'Merriweather', serif;
+
+  margin: 0;
+  padding: 0;
+  vertical-align: 0;
+
+}
+html, body{
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  height: auto !important;
+  min-height: 100%;
+  display: grid;
+  grid-template: 160px 20px 160px auto 20px 20px/  repeat(14, 1fr);
+  grid-gap: 20px;
+  margin: 100px 150px 0 150px;
+  margin-bottom:-29px
+
+}
+
+#about {
+  grid-area: 1 / 7 / 2 / 9;
+}
+
+#text {
+  grid-area: 1 / 9 / 2 / 11;
+}
+
+#drawings {
+  grid-area: 1 / 11 / 2 / 13;
+}
+
+#photos{
+  grid-area: 1 / 13 / 2 / 15;
+}
+
+#about, #text, #drawings, #photos{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 80%;
+  height: 10%;
+  text-align: center;
+  border: 3px solid black;
+  box-shadow: black 10px 10px;
+  padding: 5px 5px;
+}
+
+.left {
+  grid-area: 1 / 1 / 2 / 5;
+  font-size: 50px;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+ }
+
+.left a{
+  text-decoration: none;
+  color: black;
+}
+
+.left-a {
+  grid-area: 2 / 1 / 3 / 5;
+  border-top: 10px solid black;
+  height: 40px;
+
+}
+.left-b {
+  grid-area: 3 / 1 / 4 / 5;
+  font-size: 50px;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-a{
+  grid-area: 2 / 5 / 5 / 10;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+
+}
+
+.right-b{
+  grid-area: 2 / 10 / 6 / 15;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  border-bottom: 10px solid black;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-weight: 900;
+}
+.title{
+  border-top: 10px solid black;
+  border-bottom: 5px dashed black;
+  padding-top: 30px;
+}
+
+span {
+  font-size: 10px;
+}
+
+.icon, .pj{
+  height: 20px;
+  padding: 0 10px 10px 10px;
+}
+
+.footer {
+  font-size: 10px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+}
